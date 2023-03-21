@@ -21,7 +21,7 @@ export default class PiePagina extends React.Component {
 
     submitted(event) {
         alert(this.state.nombre +"! El mensaje (" + this.state.mensaje + ") fue corretamente enviado");
-        event.preventDefault();
+        document.getElementById("miForm").reset();
     }
 
     changedName(event) {
@@ -51,7 +51,7 @@ export default class PiePagina extends React.Component {
                         </div>
                         <div class="col-12 col-sm-6">
                             <div class="container">
-                                    <form onSubmit={this.submitted}>
+                                    <form id="miForm" onSubmit={this.submitted}>
                                         <div class="form-group">
                                             <label>Nombre</label>
                                             <input type="text" class="form-control" placeholder="Ingresa tu Nombre" onChange={this.changedName}/>
