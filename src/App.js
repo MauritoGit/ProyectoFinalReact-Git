@@ -15,28 +15,23 @@ import API from './componentes/API';
 
 function App() {
   return (
-      <div className="container-fluid">
-        <BrowserRouter>
-        <Menu/>
+      <div>
 
+          <BrowserRouter>
+          <Menu/>          
+            <Routes>
+              <Route path="/" element={<Inicio/>} />
+              <Route path="/cursos" element={<Curso/>} />
+              <Route path="/experiencia" element={<Experiencia/>} />
+              <Route path="/estudios" element={<Estudios/>} />
+              <Route path="/datos" element={<DatosGenerales/>} />
+              <Route path="/apitest" element={<API/>} />
+            </Routes>       
+          </BrowserRouter>
 
-        
-          <Routes>
-            <Route path="/" element={<Inicio/>} />
-            <Route path="/cursos" element={<Curso/>} />
-            <Route path="/experiencia" element={<Experiencia/>} />
-            <Route path="/estudios" element={<Estudios/>} />
-            <Route path="/datos" element={<DatosGenerales/>} />
-            <Route path="/apitest" element={<API/>} />
-          </Routes>
-        
-
-      
-        </BrowserRouter>
-        <footer class="mt-5">
-        <PiePagina/>
-        </footer>
-   
+          <footer class="mt-5">
+          <PiePagina/>
+          </footer>
       </div>
   );
 }
