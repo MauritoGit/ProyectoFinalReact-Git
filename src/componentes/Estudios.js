@@ -11,7 +11,7 @@ export default class Estudios extends React.Component {
                 <div className="container p-5" style={{backgroundColor: "#E5E2E2", width: "100%"}}>
                     <div>
                         <h1 class="pt-4 pb-1 mx-2">Estudios</h1>
-                        <button class="btn btn-success px-5 mx-2 mt-3 mb-5"><Link to="/" style={{color: "white", textDecoration: "none"}}>Volver</Link></button>
+                        <Link to="/"  className="btn btn-success px-5 mx-2 mt-3 mb-5" style={{color: "white", textDecoration: "none"}}>Volver</Link>
                     </div>
                     <Modulo titulo="Bachiller en Ciencias Sociales y Humanidades - dic 2015" lugar="Colegio Santo Tomás de Aquino, Córdoba, Argentina"/>
                     <br/>
