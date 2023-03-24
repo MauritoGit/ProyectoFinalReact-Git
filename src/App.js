@@ -17,6 +17,7 @@ import API from './componentes/API';
 function App() {
   return (
       <div>
+        <div class="pb-5">
           <BrowserRouter>
           <Menu/>          
             <Routes>
@@ -28,6 +29,7 @@ function App() {
               <Route path="/apitest" element={<API/>} />
             </Routes>       
           </BrowserRouter>
+          </div>
 
           <footer class="mt-5">
           <PiePagina/>
