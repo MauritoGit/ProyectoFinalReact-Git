@@ -2,16 +2,7 @@ import React from "react";
 import foto from '../img/mifoto.jpg';
 import { Link } from "react-router-dom";
 import './Inicio.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap.js';
-import 'bootstrap/dist/js/bootstrap.bundle'
-import 'jquery/src/jquery'; //for bootstrap.min.js
-//bootstrap-theme file for bootstrap 3 only
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js';
 
 export default class Inicio extends React.Component {
 

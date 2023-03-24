@@ -1,9 +1,6 @@
 import React from "react";
 import Modulo from "./Modulo";
 import './PiePagina.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"></link>
 
 export default class PiePagina extends React.Component {
     constructor(props) {
